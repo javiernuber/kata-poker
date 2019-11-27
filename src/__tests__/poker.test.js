@@ -1,4 +1,4 @@
-const { 
+const {
   formatCards,
   orderCards
 } = require('../poker.js');
@@ -16,7 +16,7 @@ describe('Poker game', () => {
   });
 
   test('order cards', () => {
-    const card = [
+    const cards = [
       { face: 13, suite: 's' },
       { face: 8, suite: 'c' },
       { face: 14, suite: 'd' },
