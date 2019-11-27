@@ -1,14 +1,16 @@
-const { formatCard } = require('../poker.js');
+const { 
+  formatCard,
+} = require('../poker.js');
 
 describe('Poker game', () => {
   test('Format card', () => {
-    const card = ['As', 'Kc', 'Qd', 'Js', 'Th'];
+    const card = ['As', 'Kc', 'Jd', '6s', '3h'];
     expect(formatCard(card)).toEqual([
-      { face: 'A', suite: 's' },
-      { face: 'K', suite: 'c' },
-      { face: 'Q', suite: 'd' },
-      { face: 'J', suite: 's' },
-      { face: 'T', suite: 'h' },
+      { face: 14, suite: 's' },
+      { face: 13, suite: 'c' },
+      { face: 11, suite: 'd' },
+      { face: 6, suite: 's' },
+      { face: 3, suite: 'h' },
     ]);
   });
 });
