@@ -1,0 +1,17 @@
+node_modules
+coverage
+.DS_Store
+tmp
+files
+.env
+.idea
+#  Local .terraform directories
+**/.terraform/*
+# .tfstate files
+*.tfstate
+*.tfstate.*
+# .tfvars files
+*.plan
+*.sample
+# IDE
+.idea
